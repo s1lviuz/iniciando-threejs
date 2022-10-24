@@ -1,0 +1,10 @@
+.controlPainel {
+    background: #820000;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 7px 7px;
+    border: 0.5px solid white;
+    border-radius: 2px;
+}

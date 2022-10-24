@@ -46,13 +46,6 @@ function Cone(props: JSX.IntrinsicElements['mesh']) {
     )
 }
 
-function Light(props: JSX.IntrinsicElements['directionalLight']) {
-
-    return (
-        <directionalLight color={0xFFFFFF} intensity={1} position={[0, 4, 2]}/>
-    )
-}
-
 export default function TestScene(props: JSX.IntrinsicElements['scene']) {
 
     const ref = React.useRef<THREE.Scene>(null!)
@@ -61,7 +54,7 @@ export default function TestScene(props: JSX.IntrinsicElements['scene']) {
         <scene
         {...props}
         ref={ref}>
-            <Light/>
+            <directionalLight color={0xFFFFFF} intensity={1} position={[0, 4, 2]}/>
             <Box position={[-2, 0, 0]}/>
             <Sphere position={[0, 0, 0]}/>
             <Cone position={[2, 0, 0]}/>
